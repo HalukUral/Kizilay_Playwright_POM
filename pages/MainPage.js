@@ -5,9 +5,8 @@ class MainPage extends BasePage {
   constructor(page) {
     super(page);
     this.pageTitle = 'Türk Kızılay | Bağış Yap';
-    this.SKBagisButton = 'a.btn-danger[href="/tr/bagis/bagiskategorisel/25/su-kuyusu-bagislari"]';
-    
-    }
+    this.SKBagisPart = '//h3[text()="Su Kuyusu Bağışları"]';
+  }
   async getTitle() {
     return await browser.getTitle();
   }

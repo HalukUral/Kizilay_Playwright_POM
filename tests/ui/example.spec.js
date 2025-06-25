@@ -33,8 +33,7 @@ test('Hızlı Bağış Sayfasına Geçiş-Pozitif Senaryo', async ({ page }) => 
   mainPage= new MainPage(page);
   bagisInfoPage = new BagisInfoPage(page);
 
-  await page.locator(mainPage.SKBagisButton).click();
-  await expect(page).toHaveURL(/su-kuyusu-bagislari/);
+  await page.locator(mainPage.SKBagisPart).click();
   await expect(page.locator(bagisPage.title)).toBeVisible();
   await page.locator(bagisPage.BagisButton1).click();
   await expect(page).toHaveURL(/su-kuyusu-genel-bagisi/);

@@ -11,7 +11,6 @@ class BagisInfoPage extends BagisPage {
     this.email = page.locator('#inpEposta2');
     this.telefon = page.locator('xpath=//input[@id="inpGsmNo2"]');
     this.tcVtc = page.locator('#inpTcVatandasiDegilim');    
-    this.title = '//h3[text()="BAĞIŞ KATEGORİLERİ"]';
     this.kvkkCheckbox = page.locator('#kvkkFormContainer input[type="checkbox"]');
     this.hizliBagisButton = page.locator('button.btn-primary:has-text("Hızlı Bağış")');
     this.amountDisplay = page.locator('span.fs-4.text-primary.ms-1');
